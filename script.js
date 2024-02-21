@@ -24,7 +24,7 @@ function draw(){
     background(0, 25, 50); // night sky
   }
 
-  x--;
+  x -= 0.5;
   if(x<0){
 
     x=width
@@ -50,6 +50,13 @@ function draw(){
   arc (0, 10, 100, 50, 0, PI, PI);
   pop();
 
+  //chimney smoke
+fill (255);
+ellipse (65, 495, 10, 70);
+ellipse (76, 465, 10, 70);
+ellipse (73, 400, 10, 70);
+
+
 //grass
   fill (0, 255, 0);
   rect (0, 650, 800, 200);
@@ -73,8 +80,8 @@ function draw(){
   rect (61, 530, 20, 30);
   fill (255, 0, 0);
   triangle (90, 530, 130, 570, 50, 570);
+  
   //chimney smoke
-
   fill (255);
   ellipse (65, 495, 10, 70);
   ellipse (76, 465, 10, 70);
