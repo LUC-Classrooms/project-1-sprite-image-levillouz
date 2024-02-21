@@ -15,7 +15,15 @@ function setup(){
 function draw(){
   // this function runs again and again (60x per second)
   
-  background(0, 25, 50); // night sky
+  //background(0, 25, 50); // night sky
+  if(mouseIsPressed){
+    //check each frame to see if the mouse is pressed, then do something
+    background (0, 160, 255);
+  } else {
+    // do something here if the mouse is NOT pressed
+    background(0, 25, 50); // night sky
+  }
+
   x--;
   if(x<0){
 
@@ -75,11 +83,6 @@ function draw(){
 /* 
   Use the following if()...else() structure to incorporate mouse click control of your animation
 */
-  if(mouseIsPressed){
-    //check each frame to see if the mouse is pressed, then do something
-  } else {
-    // do something here if the mouse is NOT pressed
-  }
 }
 
 /** 
